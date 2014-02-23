@@ -1,4 +1,4 @@
-publicspa
-=========
+Flickr Public Feed SPA
+======================
 
-A single page application that consumes a public JSON API feed (flickr).
+A Single Page Application that consumes the Flickr public photo JSON API feed.
