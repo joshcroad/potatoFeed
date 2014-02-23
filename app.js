@@ -1,3 +1,14 @@
+var app = angular.module('app', ['controllers', 'filters']);
+
+app.config(['$routeProvider', function ($routeProvider) {
+  $routeProvider
+  .when('/', {
+    templateUrl: 'partials/multi.html',
+    controller: 'photoController'
+  })
+}]);
+
+
 // This will be an ajax call to the flickr api.
 var photosetData = ({
 		"title": "Recent Uploads tagged potato",
