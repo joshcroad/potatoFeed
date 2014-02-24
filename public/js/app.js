@@ -1,5 +1,5 @@
 /**
- * Potato photo feed v0.0.1
+ * Potato photo feed v0.0.0
  * License: MIT
  */
 

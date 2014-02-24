@@ -8,13 +8,13 @@ angular.module('app')
 
   // Homepage route.
   $routeProvider.when('/potatos', {
-    templateUrl: 'app/partials/home.html',
+    templateUrl: 'partials/home.html',
     controller: 'homeController'
   })
 
   // Single photo route.
   $routeProvider.when('/potato/:id', {
-    templateUrl: 'app/partials/single.html',
+    templateUrl: 'partials/single.html',
     controller: 'singleController'
   })
 
