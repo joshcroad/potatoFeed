@@ -5,5 +5,11 @@
 
 angular.module('app')
 .controller('homeController', ['$scope', 'PhotoService', function ($scope, PhotoService) {
-  // Using PhotoService.getPhotos to retreive the feed.
+
+  PhotoService.getPhotos()
+  .then(function (data) {
+    if (data)
+      $scope.photos = data.items;
+  });
+
 }]);
