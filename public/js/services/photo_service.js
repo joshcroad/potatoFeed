@@ -4,10 +4,14 @@
  */
 
 angular.module('app')
-.factory('PhotoService', [function () {
+.factory('PhotoService', ['$http', '$q', function ($http, $q) {
 
-  // Function to retrieve the photo feed.
-  var getPhotos = function () {};
+  var getPhotos = function (page) {
+    var deferred = $q.defer();
+
+
+    return deferred.promise;
+  }
 
   return {
     'getPhotos': getPhotos
