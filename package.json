@@ -3,18 +3,18 @@
   "version": "0.0.0",
   "description": "A Single Page Application that consumes the Flickr public photo JSON API feed.",
   "main": "server.js",
+  "author": "Joshua Croad",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/joshcroad/potatoFeed.git"
   },
   "dependencies": {
-    "connect": "2.13.x",
+    "connect": "2.13.x"
   },
   "devDependencies": {
     "nodemon": "1.0.x"
   },
-  "author": "Joshua Croad",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/joshcroad/potatoFeed/issues"
   },
