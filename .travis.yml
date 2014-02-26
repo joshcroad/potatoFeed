@@ -1,12 +1,12 @@
 language: node_js
 node_js:
-  - "0.10"
+- '0.10'
 before_script:
-  - npm install
+- npm install
 notifications:
   email: true
 deploy:
   provider: heroku
   app: potatofeed
   api_key:
-    secure: e0FUvGRQuTiIDWb8SITlh8UWQUbGbM4RdjZvmLa6dDLA9w19N0oXB2oIl0+89j/a6LhaDCqX6yTwfB21gePU4pwGw2UROvKWuqfNHTO2wJz2kpnMHs701nGgXa1ke1qLVBA0eKHciIB+7KxRfowB0FybP3nuAxrR1QUPsirN9lY=
+    secure: pywUMnY5XL5TXvlOv+GmFiHpVkEMSSwrY6iEs1xSYHMRyM5q9PUAWryuG3u/jjBfwc/JqhiMRoCSQ4KbiVF/gLcIrRT7kR/NOgYOk/mtuoOAIMOZEs+K+wtvofM0JbgAPV+bad6KdnbLplgqHD/CFUD1j4Y/sruaoYDBmBISbDE=
