@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+- '0.10'
+before_script:
+- npm install
+notifications:
+  email: true
+deploy:
+  provider: heroku
+  app: potatofeed
+  on: master
+  api_key:
+    secure: e0FUvGRQuTiIDWb8SITlh8UWQUbGbM4RdjZvmLa6dDLA9w19N0oXB2oIl0+89j/a6LhaDCqX6yTwfB21gePU4pwGw2UROvKWuqfNHTO2wJz2kpnMHs701nGgXa1ke1qLVBA0eKHciIB+7KxRfowB0FybP3nuAxrR1QUPsirN9lY=
