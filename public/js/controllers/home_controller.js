@@ -8,8 +8,9 @@ angular.module('app')
 
   PhotoService.getPhotos()
   .then(function (data) {
-    if (data)
+    if (data.items) {
       $scope.photos = data.items;
+    }
   });
 
 }]);

@@ -1,6 +1,7 @@
 <div class="container">
   <h1>Home</h1>
   <div class="photos" data-ng-repeat="photo in photos">
+    <img src="{{ photo.media.m }}" alt="{{ photo.title }}" />
     {{ photo.title }}
   </div>
 </div>
