@@ -1,3 +1,32 @@
 <div class="container">
-  <h1>A single</h1>
+
+  <!-- ROW -->
+  <div class="row photos" data-ng-repeat="photo in photos">
+
+    <!-- FIRST COLUMN -->
+    <div class="col photo">
+
+      <a href="#/potato/{{ photo.link | getPhotoID }}">
+        <img src="{{ photo.media.m }}" alt="{{ photo.title }}" />
+      </a>
+
+    </div>
+
+    <!-- SECOND COLUMN -->
+    <div class="col data">
+
+      <div class="details">
+        <h1><a href="#/potato/{{ photo.link | getPhotoID }}">{{ photo.title }}</a></h1>
+
+        <div class="meta_data">
+          <a href="http://flickr.com/photos/{{ photo.author_id }}" target="_blank">{{ photo.author | getAuthor }}</a>
+          <span class="publish_date">Published: {{ photo.published | date:"dd MMM yyyy 'at' HH':'mm"}}</span>
+          <a href="{{ photo.link }}" target="_blank">View on Flickr</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
 </div>

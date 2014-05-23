@@ -4,6 +4,7 @@
  */
 
 angular.module('app')
+
 .controller('homeController', ['$scope', 'PhotoService', function ($scope, PhotoService) {
 
   PhotoService.getPhotos()

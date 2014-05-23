@@ -6,19 +6,21 @@
 angular.module('app')
 .config(['$routeProvider', function ($routeProvider) {
 
-  // Homepage route.
-  $routeProvider.when('/potatos', {
-    templateUrl: 'partials/home.html',
-    controller: 'homeController'
-  })
-
   // Single photo route.
   $routeProvider.when('/potato/:id', {
     templateUrl: 'partials/single.html',
     controller: 'singleController'
-  })
+  });
+
+  // Homepage route.
+  $routeProvider.when('/potatos', {
+    templateUrl: 'partials/home.html',
+    controller: 'homeController'
+  });
 
   // Otherwise route.
-  $routeProvider.otherwise({ redirectTo: '/potatos' });
+  $routeProvider.otherwise({
+    redirectTo: '/potatos'
+  });
 
 }]);

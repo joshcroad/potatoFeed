@@ -4,6 +4,7 @@
  */
 
 angular.module('app', ['ngRoute', 'ngSanitize'])
+
 .run(['$rootScope', function ($rootScope) {
 
   // For debugging purposes, add a log function

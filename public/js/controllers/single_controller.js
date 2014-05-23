@@ -4,6 +4,9 @@
  */
 
 angular.module('app')
-.controller('singleController', ['$scope', function ($scope) {
 
+.controller('singleController', ['$scope', 'PhotoService', function ($scope, PhotoService) {
+  
+  
+  
 }]);

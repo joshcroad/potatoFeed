@@ -1,10 +1,15 @@
-@background-color: rgb(236, 240, 241);
-@heading-color: rgb(41, 128, 185);
-@heading-color-hover: rgb(52, 73, 94);
-@border-color: rgb(189, 195, 199);
+@porcelain: rgba(236, 240, 241, 0.5);
+@iron: rgba(218, 223, 225, 0.4);
+@silver: rgba(189, 195, 199, 1);
+@madison: rgba(44, 62, 80, 1);
+@pickled-bluewood: rgba(52, 73, 94, 0.7);
+@hoki: rgba(103, 128, 159, 1);
+@fountain-blue: rgba(92, 151, 191, 0.7);
 
 * {
-  font: 1em/1.5em helvetica, arial, sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 .clearfix {
@@ -21,6 +26,70 @@
   }
 }
 
-body {
-  background: @background-color;
+html, body {
+  font: 1rem/1.5rem 'Gotham A', 'Gotham B', 'Helvetica-Neue', 'Helvetica', 'Arial';
+  width: 100%;
+}
+
+.container {
+  font-size: 0;
+  
+  .row {
+    font-size: 1rem;
+    width: 100%;
+    display: block;
+    height: 10rem;
+    overflow: hidden;
+    border-bottom: 1px solid @pickled-bluewood;
+    background: @porcelain;
+    
+    &:nth-child(2n) {
+      background: @iron;
+    }
+    
+    .col {
+      display: block;
+      float: left;
+      font-size: 1rem;
+      height: 100%;
+    }
+    
+    .photo {
+      width: 14rem;
+      border-right: 0.5rem solid @pickled-bluewood;
+      
+      img {
+        width: 100%;
+      }
+    }
+    
+    .data {
+      padding: 1rem;
+      color: @silver;
+      
+      h1 a {
+        color: @madison;
+        text-decoration: none;
+      }
+      
+      h1 a:hover {
+        color: @pickled-bluewood;
+      }
+      
+      .meta_data {
+        
+        font-size: 0.8rem;
+      
+        a {
+          color: @hoki;
+        }
+
+        a:hover {
+          color: @fountain-blue;
+        }
+        
+      }
+    }
+  }
+
 }
